@@ -6,38 +6,51 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
     <header>
         <h1>🎮 Каталог ігор та жанрів</h1>
         <nav class="top-menu">
-            <a href="index.html">Головна</a> | 
-            <a href="catalog.html">Каталог ігор</a> | 
-            <a href="history.html">Історія індустрії</a> | 
+            <a href="index.html">Головна</a> |
+            <a href="catalog.html">Каталог ігор</a> |
+            <a href="history.html">Історія індустрії</a> |
             <a href="contacts.html">Контакти</a>
         </nav>
     </header>
 
-    <hr>
-
     <main>
         <section>
-            <h3>Популярні жанри відеоігор:</h3>
+            <h3>Популярні жанри</h3>
             <ul class="genre-list">
-                <li><b>Action-RPG:</b> Ігри з акцентом на бойову систему та розвиток персонажа (наприклад, The Witcher).</li>
-                <li><b>Strategies:</b> Ігри, що вимагають планування та стратегічного мислення (наприклад, StarCraft).</li>
-                <li><b>Shooters:</b> Динамічні ігри, де головне — швидкість реакції (наприклад, Counter-Strike).</li>
-                <li><b>MOBA:</b> Багатокористувацькі битви на арені з унікальними героями.</li>
+                <li><b>Action-RPG:</b> Ігри з акцентом на бойову систему та розвиток персонажа.</li>
+                <li><b>Strategy:</b> Ігри, що вимагають планування та стратегічного мислення.</li>
+                <li><b>Shooter:</b> Динамічні ігри, де важлива швидкість реакції.</li>
+                <li><b>MOBA:</b> Багатокористувацькі битви на арені.</li>
             </ul>
         </section>
 
         <section>
-            <h3>Рейтинг найбільш очікуваних проектів:</h3>
+            <h3>Рейтинг</h3>
+            <ol type="I">
+                <li>The Witcher 4</li>
+                <li>GTA VI</li>
+                <li>Hades II</li>
+            </ol>
+
+            <h3>Терміни</h3>
+            <dl>
+                <dt>RPG</dt>
+                <dd>Рольова гра з розвитком персонажа.</dd>
+                <dt>FPS</dt>
+                <dd>Шутер від першої особи.</dd>
+            </dl>
+        </section>
+
+        <section>
             <table class="games-table">
                 <thead>
                     <tr>
                         <th>Назва гри</th>
                         <th>Жанр</th>
-                        <th>Рік виходу (очікувано)</th>
+                        <th>Рік</th>
                         <th>Платформи</th>
                     </tr>
                 </thead>
@@ -57,7 +70,7 @@
                     <tr>
                         <td>Hades II</td>
                         <td>Roguelike</td>
-                        <td>2024 (Early Access)</td>
+                        <td>2024</td>
                         <td>PC</td>
                     </tr>
                     <tr>
@@ -69,13 +82,62 @@
                 </tbody>
             </table>
         </section>
+
+        <section>
+            <table class="demo-table" border="1" cellpadding="8" cellspacing="6">
+                <caption>Ігрові платформи</caption>
+                <tr class="demo-head">
+                    <th>Платформа</th>
+                    <th>Компанія</th>
+                    <th>Рік запуску</th>
+                    <th>Офіційний сайт</th>
+                </tr>
+                
+                <tr>
+                    <td>Steam</td>
+                    <td>Valve</td>
+                    <td>2003</td>
+                    <td><a href="https://store.steampowered.com" target="_blank" rel="noopener">Steam</a></td>
+                </tr>
+                <tr>
+                    <td>PlayStation Store</td>
+                    <td>Sony</td>
+                    <td>2006</td>
+                    <td><a href="https://store.playstation.com" target="_blank" rel="noopener">PlayStation</a></td>
+                </tr>
+            </table>
+        </section>
+
+        <section>
+            <table class="complex-demo" border="1" cellpadding="8" cellspacing="6">
+                <colgroup>
+                    <col span="1" style="width:35%">
+                    <col span="2" style="width:65%">
+                </colgroup>
+                <tr>
+                    <th rowspan="2" align="center">Жанр</th>
+                    <th colspan="2" align="center">Популярність</th>
+                </tr>
+                <tr>
+                    <td align="left">Україна</td>
+                    <td align="right">Світ</td>
+                </tr>
+                <tr>
+                    <td>RPG</td>
+                    <td align="left">Дуже популярний</td>
+                    <td align="right">Найпопулярніший</td>
+                </tr>
+                <tr>
+                    <td>Shooter</td>
+                    <td align="left">Популярний</td>
+                    <td align="right">Дуже популярний</td>
+                </tr>
+            </table>
+        </section>
     </main>
 
-    <hr>
-
     <footer>
-        <p>&copy; 2026 Студент КПІ, Артем. Лабораторна робота №2.</p>
+        <p>&copy; 2026 Студент КПІ, Артем.</p>
     </footer>
-
 </body>
 </html>

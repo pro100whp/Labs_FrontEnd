@@ -4,28 +4,77 @@
     <meta charset="UTF-8">
     <title>Ігровий Світ | Головна</title>
     <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* Стиль рівня документа */
+        a {
+            color: yellow !important;
+            text-decoration: underline;
+        }
+
+        /* Унікальний id */
+        #special-title {
+            font-size: 28px;
+            color: orange;
+            text-align: center;
+        }
+    </style>
 </head>
+
 <body>
-    <header>
-        <h1>🎮 Світ комп'ютерних ігор</h1>
-        <nav class="top-menu">
-    <a href="index.html">Головна</a> | 
-    <a href="catalog.html">Каталог ігор</a> | 
-    <a href="history.html">Історія індустрії</a> | 
-    <a href="contacts.html">Контакти</a>
-</nav>
-    </header>
-    <hr>
-    <main>
-        <section>
-            <h2>Ласкаво просимо!</h2>
-            <p>Цей сайт створений для фанатів відеоігор. Тут ви знайдете інформацію про жанри, історію та контакти автора.</p>
+
+<header>
+    <h1>🎮 Світ комп'ютерних ігор</h1>
+
+    <nav class="top-menu">
+        <a href="index.html">Головна</a> |
+        <a href="catalog.html">Каталог ігор</a> |
+        <a href="history.html">Історія індустрії</a> |
+        <a href="contacts.html">Контакти</a>
+    </nav>
+</header>
+
+<main>
+
+    <h2 id="special-title">Ласкаво просимо!</h2>
+
+    <p style="color: lightgreen; font-weight: bold;">
+        Цей сайт створений для фанатів відеоігор. Тут — інформація про жанри, історію та контакти автора.
+    </p>
+
+    <p class="center">
+        <a href="https://img.freepik.com/free-vector/gaming-concept-illustration_114360-7873.jpg" target="_blank">
             <img src="https://img.freepik.com/free-vector/gaming-concept-illustration_114360-7873.jpg" alt="Gaming Banner" width="400">
-        </section>
-    </main>
-    <hr>
-    <footer>
-        <p>&copy; 2026 Студент КПІ, Артем. Лабораторна робота №2.</p>
-    </footer>
+        </a>
+    </p>
+
+    <p>
+        <img src="https://img.freepik.com/free-vector/gaming-concept-illustration_114360-7873.jpg" alt="small" width="200">
+        <img src="https://img.freepik.com/free-vector/gaming-concept-illustration_114360-7873.jpg" alt="large" width="800">
+    </p>
+
+    <p>
+        <a href="#special-title">Вгору</a> |
+        <a href="history.html#arcade">Докладніше про історію</a> |
+        <a href="https://store.steampowered.com" target="_blank">Steam</a>
+    </p>
+
+    <section>
+        <h3>Про сайт</h3>
+
+        <ul class="short-list">
+            <li><b>Новини</b> про індустрію</li>
+            <li><b>Огляди</b> та жанри</li>
+            <li><b>Контакти</b> автора</li>
+        </ul>
+
+    </section>
+
+</main>
+
+<footer>
+    <p>&copy; 2026 Студент КПІ, Артем. Лабораторна робота №3.</p>
+</footer>
+
 </body>
 </html>

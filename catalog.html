@@ -2,16 +2,18 @@
 <html lang="uk">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Каталог ігор | Лабораторна №2</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <header>
         <h1>🎮 Каталог ігор та жанрів</h1>
         <nav class="top-menu">
-            <a href="index.html">Головна</a> |
-            <a href="catalog.html">Каталог ігор</a> |
-            <a href="history.html">Історія індустрії</a> |
+            <a href="index.html">Головна</a>
+            <a href="catalog.html" style="color: #00ffcc;">Каталог ігор</a>
+            <a href="history.html">Історія індустрії</a>
             <a href="contacts.html">Контакти</a>
         </nav>
     </header>
@@ -23,12 +25,10 @@
                 <li><b>Action-RPG:</b> Ігри з акцентом на бойову систему та розвиток персонажа.</li>
                 <li><b>Strategy:</b> Ігри, що вимагають планування та стратегічного мислення.</li>
                 <li><b>Shooter:</b> Динамічні ігри, де важлива швидкість реакції.</li>
-                <li><b>MOBA:</b> Багатокористувацькі битви на арені.</li>
+                <li><b>MOBA:</b> Багатокористувацькі битви на арені (наприклад, Dota 2).</li>
             </ul>
-        </section>
 
-        <section>
-            <h3>Рейтинг</h3>
+            <h3>Рейтинг очікуваних ігор</h3>
             <ol type="I">
                 <li>The Witcher 4</li>
                 <li>GTA VI</li>
@@ -38,13 +38,14 @@
             <h3>Терміни</h3>
             <dl>
                 <dt>RPG</dt>
-                <dd>Рольова гра з розвитком персонажа.</dd>
+                <dd>Рольова гра з розвитком персонажа та відіграшем ролі.</dd>
                 <dt>FPS</dt>
-                <dd>Шутер від першої особи.</dd>
+                <dd>Шутер від першої особи (First-Person Shooter).</dd>
             </dl>
         </section>
 
         <section>
+            <h3>Головні релізи</h3>
             <table class="games-table">
                 <thead>
                     <tr>
@@ -84,15 +85,15 @@
         </section>
 
         <section>
-            <table class="demo-table" border="1" cellpadding="8" cellspacing="6">
-                <caption>Ігрові платформи</caption>
+            <h3>Платформи дистрибуції</h3>
+            <table class="demo-table" border="1" cellpadding="8" cellspacing="0">
+                <caption>Офіційні ігрові платформи</caption>
                 <tr class="demo-head">
                     <th>Платформа</th>
                     <th>Компанія</th>
                     <th>Рік запуску</th>
                     <th>Офіційний сайт</th>
                 </tr>
-                
                 <tr>
                     <td>Steam</td>
                     <td>Valve</td>
@@ -103,41 +104,42 @@
                     <td>PlayStation Store</td>
                     <td>Sony</td>
                     <td>2006</td>
-                    <td><a href="https://store.playstation.com" target="_blank" rel="noopener">PlayStation</a></td>
+                    <td><a href="https://store.playstation.com" target="_blank" rel="noopener">PS Store</a></td>
                 </tr>
             </table>
         </section>
 
         <section>
-            <table class="complex-demo" border="1" cellpadding="8" cellspacing="6">
+            <h3>Аналітика жанрів</h3>
+            <table class="complex-demo" border="1" cellpadding="8" cellspacing="0">
                 <colgroup>
-                    <col span="1" style="width:35%">
-                    <col span="2" style="width:65%">
+                    <col span="1" style="width:30%">
+                    <col span="2" style="width:70%">
                 </colgroup>
                 <tr>
-                    <th rowspan="2" align="center">Жанр</th>
-                    <th colspan="2" align="center">Популярність</th>
+                    <th rowspan="2" style="text-align: center; vertical-align: middle;">Жанр</th>
+                    <th colspan="2" style="text-align: center;">Популярність</th>
                 </tr>
                 <tr>
-                    <td align="left">Україна</td>
-                    <td align="right">Світ</td>
+                    <th style="background-color: #1a1a1a; color: #00ffcc;">Україна</th>
+                    <th style="background-color: #1a1a1a; color: #00ffcc;">Світ</th>
                 </tr>
                 <tr>
                     <td>RPG</td>
-                    <td align="left">Дуже популярний</td>
-                    <td align="right">Найпопулярніший</td>
+                    <td>Дуже популярний</td>
+                    <td>Найпопулярніший</td>
                 </tr>
                 <tr>
                     <td>Shooter</td>
-                    <td align="left">Популярний</td>
-                    <td align="right">Дуже популярний</td>
+                    <td>Популярний</td>
+                    <td>Дуже популярний</td>
                 </tr>
             </table>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2026 Студент КПІ, Артем.</p>
+        <p>© 2026 Студент КПІ, Артем.</p>
     </footer>
 </body>
 </html>

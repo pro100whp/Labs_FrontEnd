@@ -2,6 +2,7 @@
 <html lang="uk">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Контакти</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -9,27 +10,44 @@
     <header>
         <h1>Зворотний зв'язок</h1>
         <nav class="top-menu">
-            <a href="index.html">Головна</a> |
-            <a href="catalog.html">Каталог ігор</a> |
-            <a href="history.html">Історія</a> |
-            <a href="contacts.html">Контакти</a>
+            <a href="index.html">Головна</a>
+            <a href="catalog.html">Каталог ігор</a>
+            <a href="history.html">Історія</a>
+            <a href="contacts.html" style="color: #00ffcc;">Контакти</a>
         </nav>
     </header>
 
     <main>
-        <p><b>Автор сайту:</b> Артем</p>
-        <p><b>Університет:</b> КПІ ім. Ігоря Сікорського</p>
-        <p><b>Спеціальність:</b> Інформаційні системи та технології (ІСТ)</p>
-        <p>З питань співпраці: <i>Shalyminov.Artem@lll.kpi.ua</i></p>
+        <section class="contact-wrapper">
+            <div class="contact-info">
+                <h2>Контактна інформація</h2>
+                <p><b>Автор сайту:</b> Артем</p>
+                <p><b>Університет:</b> КПІ ім. Ігоря Сікорського</p>
+                <p><b>Спеціальність:</b> Інформаційні системи та технології (ІСТ)</p>
+                <p>З питань співпраці пишіть на пошту: <br>
+                <i style="color: #00ffcc;">Shalyminov.Artem@lll.kpi.ua</i></p>
 
-        <iframe
-            src="https://www.google.com/maps?q=КПІ+Київ&output=embed"
-            width="320"
-            height="240"
-            style="float:right; border:2px solid #00ffcc; margin:10px;">
-        </iframe>
+                <p style="margin-top: 30px;">
+                    <a href="index.html" style="color: #b3b3b3;">← Головна</a> | 
+                    <a href="catalog.html" style="color: #b3b3b3;">Каталог</a>
+                </p>
+            </div>
 
-        <p>Повернутися: <a href="index.html">головна</a> | <a href="catalog.html">каталог</a></p>
+            <div class="contact-map">
+                <iframe
+                    src="https://maps.google.com/maps?q=KPI,Kyiv&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                    width="400"
+                    height="300"
+                    style="border: 2px solid #00ffcc; margin: 10px;"
+                    allowfullscreen=""
+                    loading="lazy">
+                </iframe>
+            </div>
+        </section>
     </main>
+
+    <footer>
+        <p>© 2026 Студент КПІ, Артем.</p>
+    </footer>
 </body>
 </html>

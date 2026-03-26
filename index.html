@@ -2,78 +2,69 @@
 <html lang="uk">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ігровий Світ | Головна</title>
     <link rel="stylesheet" href="style.css">
 
     <style>
         /* Стиль рівня документа */
-        a {
-            color: yellow !important;
+        a.highlight-link {
+            color: #ff0055 !important;
             text-decoration: underline;
         }
-
-        /* Унікальний id */
         #special-title {
             font-size: 28px;
-            color: orange;
+            color: #00ffcc;
             text-align: center;
+            margin-bottom: 20px;
         }
     </style>
 </head>
-
 <body>
 
 <header>
     <h1>🎮 Світ комп'ютерних ігор</h1>
-
     <nav class="top-menu">
-        <a href="index.html">Головна</a> |
-        <a href="catalog.html">Каталог ігор</a> |
-        <a href="history.html">Історія індустрії</a> |
+        <a href="index.html" style="color: #00ffcc;">Головна</a>
+        <a href="catalog.html">Каталог ігор</a>
+        <a href="history.html">Історія індустрії</a>
         <a href="contacts.html">Контакти</a>
     </nav>
 </header>
 
 <main>
+    <section>
+        <h2 id="special-title">Ласкаво просимо!</h2>
 
-    <h2 id="special-title">Ласкаво просимо!</h2>
+        <p style="color: #b3b3b3; font-size: 1.1rem; text-align: center;">
+            Цей сайт створений для фанатів відеоігор. Тут зібрана інформація про популярні жанри, історію розвитку індустрії та найкращі проєкти.
+        </p>
 
-    <p style="color: lightgreen; font-weight: bold;">
-        Цей сайт створений для фанатів відеоігор. Тут — інформація про жанри, історію та контакти автора.
-    </p>
+        <div class="image-gallery">
+            <a href="https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=800" target="_blank">
+                <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=800" alt="Gaming Setup Large" width="600">
+            </a>
+        </div>
 
-    <p class="center">
-        <a href="https://img.freepik.com/free-vector/gaming-concept-illustration_114360-7873.jpg" target="_blank">
-            <img src="https://img.freepik.com/free-vector/gaming-concept-illustration_114360-7873.jpg" alt="Gaming Banner" width="400">
-        </a>
-    </p>
-
-    <p>
-        <img src="https://img.freepik.com/free-vector/gaming-concept-illustration_114360-7873.jpg" alt="small" width="200">
-        <img src="https://img.freepik.com/free-vector/gaming-concept-illustration_114360-7873.jpg" alt="large" width="800">
-    </p>
-
-    <p>
-        <a href="#special-title">Вгору</a> |
-        <a href="history.html#arcade">Докладніше про історію</a> |
-        <a href="https://store.steampowered.com" target="_blank">Steam</a>
-    </p>
+        <div style="text-align: center; margin-top: 20px;">
+            <a href="#special-title" class="highlight-link">Вгору</a> |
+            <a href="history.html#arcade" class="highlight-link">Докладніше про історію</a> |
+            <a href="https://store.steampowered.com" target="_blank" class="highlight-link">Steam</a>
+        </div>
+    </section>
 
     <section>
         <h3>Про сайт</h3>
-
         <ul class="short-list">
             <li><b>Новини</b> про індустрію</li>
             <li><b>Огляди</b> та жанри</li>
             <li><b>Контакти</b> автора</li>
         </ul>
-
     </section>
-
 </main>
 
 <footer>
-    <p>&copy; 2026 Студент КПІ, Артем. Лабораторна робота №3.</p>
+    <p>© 2026 Студент КПІ, Артем. Лабораторна робота №3.</p>
 </footer>
 
 </body>

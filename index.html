@@ -5,27 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ігровий Світ | Головна</title>
     <link rel="stylesheet" href="style.css">
-
-    <style>
-        /* Стиль рівня документа */
-        a.highlight-link {
-            color: #ff0055 !important;
-            text-decoration: underline;
-        }
-        #special-title {
-            font-size: 28px;
-            color: #00ffcc;
-            text-align: center;
-            margin-bottom: 20px;
-        }
-    </style>
 </head>
 <body>
 
 <header>
     <h1>🎮 Світ комп'ютерних ігор</h1>
     <nav class="top-menu">
-        <a href="index.html" style="color: #00ffcc;">Головна</a>
+        <a href="index.html" class="active-nav">Головна</a>
         <a href="catalog.html">Каталог ігор</a>
         <a href="history.html">Історія індустрії</a>
         <a href="contacts.html">Контакти</a>
@@ -34,8 +20,7 @@
 
 <main>
     <section>
-        <h2 id="special-title">Ласкаво просимо!</h2>
-
+        <h2>Ласкаво просимо!</h2>
         <p style="color: #b3b3b3; font-size: 1.1rem; text-align: center;">
             Цей сайт створений для фанатів відеоігор. Тут зібрана інформація про популярні жанри, історію розвитку індустрії та найкращі проєкти.
         </p>
@@ -45,11 +30,31 @@
                 <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=800" alt="Gaming Setup Large" width="600">
             </a>
         </div>
+    </section>
 
-        <div style="text-align: center; margin-top: 20px;">
-            <a href="#special-title" class="highlight-link">Вгору</a> |
-            <a href="history.html#arcade" class="highlight-link">Докладніше про історію</a> |
-            <a href="https://store.steampowered.com" target="_blank" class="highlight-link">Steam</a>
+    <section>
+        <h3>Гра місяця</h3>
+        
+        <div class="game-of-the-month-card">
+            
+            <div class="hot-badge">ХІТ ПРОДАЖІВ</div>
+            
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMk5lXjt8WO3iCoNXzDDYEOv4c_v1DnR0isw&s" alt="Game cover" width="200" class="float-image">
+            
+            <p>
+                Цього місяця абсолютним лідером серед гравців став новий екшен у відкритому світі. 
+                Розробники додали неймовірну графіку, глибокий сюжет та круту бойову систему. 
+                Особливої уваги заслуговує <span class="text-highlight">система прокачки персонажа</span>, яка дозволяє створити унікального бійця.
+            </p>
+            <p>
+                Гру вже визнали шедевром багато критиків. Ви можете перевірити відгуки або придбати гру в офіційних магазинах.
+            </p>
+            
+            <p style="margin-top: 15px;">
+                Дізнатись більше: <a href="https://store.steampowered.com" target="_blank" class="content-link">Офіційна сторінка у Steam</a>
+            </p>
+
+            <div class="clearfix"></div>
         </div>
     </section>
 
@@ -64,7 +69,7 @@
 </main>
 
 <footer>
-    <p>© 2026 Студент КПІ, Артем. Лабораторна робота №3.</p>
+    <p>© 2026 Студент КПІ, Артем. Лабораторна робота.</p>
 </footer>
 
 </body>

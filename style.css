@@ -12,12 +12,6 @@ body {
     line-height: 1.6;
 }
 
-.container {
-    width: 90%;
-    max-width: 1100px;
-    margin: 0 auto;
-}
-
 /* Шапка та навігація */
 header {
     background-color: #1e1e1e;
@@ -44,10 +38,13 @@ header h1 {
     font-weight: bold;
     font-size: 1.1rem;
     transition: color 0.3s, text-shadow 0.3s;
+    padding-bottom: 3px;
+    border-bottom: 2px solid transparent;
 }
 
-.top-menu a:hover {
+.top-menu a:hover, .top-menu a.active-nav {
     color: #00ffcc;
+    border-bottom: 2px solid #00ffcc;
     text-shadow: 0 0 8px rgba(0, 255, 204, 0.6);
 }
 
@@ -58,7 +55,9 @@ main {
     padding: 0 20px;
 }
 
+/* Блочні елементи (div, section) - ВИМОГА ЛАБИ */
 section {
+    display: block; /* Блочний елемент */
     background-color: #1e1e1e;
     padding: 25px;
     border-radius: 10px;
@@ -69,6 +68,13 @@ section {
 h2, h3 {
     color: #00ffcc;
     margin-bottom: 15px;
+}
+
+/* Псевдоелемент ::before - ВИМОГА ЛАБИ */
+/* Додає іконку джойстика перед усіма заголовками h3 */
+h3::before {
+    content: "🕹️ ";
+    margin-right: 5px;
 }
 
 p {
@@ -82,32 +88,11 @@ p {
     margin-bottom: 20px;
 }
 
-.genre-list li, .short-list li {
-    margin-bottom: 8px;
-}
-
-ol {
-    margin-left: 20px;
-    margin-bottom: 20px;
-}
-
-dl {
-    background: #2a2a2a;
-    padding: 15px;
-    border-radius: 8px;
-    border-left: 4px solid #ff0055;
-}
-
-dt {
-    font-weight: bold;
+/* Псевдоклас :first-child - ВИМОГА ЛАБИ */
+/* Робить перший елемент у списках виділеним (наприклад, перший жанр) */
+.genre-list li:first-child, .short-list li:first-child {
     color: #ff0055;
-    margin-top: 10px;
-}
-
-dd {
-    margin-left: 20px;
-    margin-bottom: 10px;
-    color: #ccc;
+    font-weight: bold;
 }
 
 /* Таблиці */
@@ -120,12 +105,6 @@ table {
     overflow: hidden;
 }
 
-caption {
-    color: #888;
-    font-style: italic;
-    margin-bottom: 10px;
-}
-
 th, td {
     padding: 12px 15px;
     text-align: left;
@@ -136,14 +115,9 @@ th {
     background-color: #00ffcc;
     color: #121212;
     font-weight: bold;
-    text-transform: uppercase;
 }
 
-tr:nth-child(even) {
-    background-color: #222;
-}
-
-/* Галерея зображень (Статична) */
+/* Галерея зображень */
 .image-gallery {
     display: flex;
     align-items: center;
@@ -156,23 +130,74 @@ tr:nth-child(even) {
     border: 2px solid #333;
 }
 
-/* Контакти */
-.contact-wrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    gap: 20px;
-}
 
-.contact-info {
-    flex: 1;
-    min-width: 300px;
-}
 
-iframe {
+/* Позиціонування: Position Relative */
+.game-of-the-month-card {
+    position: relative; /* Контейнер стає точкою відліку */
+    background-color: #262626;
+    padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 255, 204, 0.2);
+    border: 1px solid #444;
+}
+
+/* Позиціонування: Position Absolute  */
+.hot-badge {
+    position: absolute;
+    top: -15px;
+    right: 20px;
+    background-color: #ff0055;
+    color: #fff;
+    font-weight: bold;
+    padding: 5px 15px;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(255, 0, 85, 0.4);
+}
+
+/* Атрибут float */
+.float-image {
+    float: left; /* Картинка прилипає вліво, текст обтікає її справа */
+    margin-right: 20px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    border: 2px solid #00ffcc;
+}
+
+/* Очищення float, щоб блок не ламався */
+.clearfix {
+    clear: both;
+}
+
+/* Рядковий елемент (span)  */
+.text-highlight {
+    display: inline; /* Рядковий елемент */
+    color: #00ffcc;
+    background-color: rgba(0, 255, 204, 0.1);
+    padding: 0 5px;
+    border-radius: 3px;
+}
+
+/* Псевдокласи для посилань всередині контенту  */
+.content-link:link {
+    color: #00ffcc; /* Звичайне */
+    text-decoration: none;
+}
+.content-link:visited {
+    color: #b088f5; /* Відвідане (фіолетове) */
+}
+.content-link:hover {
+    color: #ff0055; /* При наведенні */
+    text-decoration: underline;
+}
+.content-link:active {
+    color: #ffff00; /* В момент кліку */
+}
+
+/* Псевдоелемент ::after  */
+/* Додає стрілочку після зовнішніх посилань */
+.content-link::after {
+    content: " ↗";
+    font-size: 0.8rem;
 }
 
 /* Підвал */
@@ -183,33 +208,4 @@ footer {
     color: #777;
     margin-top: 40px;
     border-top: 1px solid #333;
-}
-
-
-
-/* 1. Контекстний селектор (пробіл) 
-   Змінює колір тексту в тегах <b>, якщо вони знаходяться всередині <li> */
-li b {
-    color: #00ffcc;
-    letter-spacing: 0.5px;
-}
-
-/* 2. Дочірній селектор (>) 
-   Додає анімацію підкреслення тільки прямим посиланням у головному меню */
-.top-menu > a {
-    padding-bottom: 3px;
-    border-bottom: 2px solid transparent;
-}
-
-.top-menu > a:hover {
-    border-bottom: 2px solid #00ffcc;
-}
-
-/* 3. Сусідній селектор (+) 
-   Стилізує перший абзац <p>, який йде ОДРАЗУ після заголовка <h2> або <h3> */
-h2 + p, h3 + p {
-    border-left: 3px solid #ff0055;
-    padding-left: 12px;
-    font-style: italic;
-    color: #d1d1d1;
 }

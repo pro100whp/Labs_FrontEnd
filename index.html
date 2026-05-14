@@ -58,6 +58,33 @@
         </div>
     </section>
 
+    <section id="interactive-section">
+        <h3>Панель керування та інтерактиви</h3>
+        
+        <div style="margin-bottom: 15px; display: flex; gap: 10px; flex-wrap: wrap;">
+            <button id="btn-greeting" style="padding: 10px; background: #00ffcc; border: none; cursor: pointer; border-radius: 5px; font-weight: bold;">Підписка на новини</button>
+            <button id="btn-promo" style="padding: 10px; background: #ff0055; color: white; border: none; cursor: pointer; border-radius: 5px; font-weight: bold;">Опитування гравців</button>
+            <button id="btn-bg" style="padding: 10px; background: #b088f5; color: white; border: none; cursor: pointer; border-radius: 5px; font-weight: bold;">Увімкнути фокус-режим</button>
+            <button id="btn-redirect" style="padding: 10px; background: #333; color: white; border: 1px solid #00ffcc; cursor: pointer; border-radius: 5px; font-weight: bold;">Швидкий перехід у Каталог</button>
+        </div>
+
+        <div id="dom-playground" style="background: #2a2a2a; padding: 15px; border-radius: 8px;">
+            <h4 style="color: #fff; margin-bottom: 10px;">Останні події платформи</h4>
+            
+            <p id="replace-target">Тут була застаріла інформація про турнір.</p>
+            <div class="query-item" style="margin-bottom: 5px;">Новина про оновлення рушія Unreal Engine 5.</div>
+            <div class="query-item" style="margin-bottom: 5px;">Чутки про нову консоль від Nintendo.</div>
+            
+            <div id="insert-zone" style="margin-top: 15px; border: 1px dashed #00ffcc; padding: 10px; border-radius: 5px;">
+                Відгуки спільноти:
+            </div>
+            
+            <script>
+                document.write("<p style='color: #00ffcc; margin-top: 15px; font-size: 0.9rem;'><em>Статус серверів: Онлайн. З'єднання стабільне.</em></p>");
+            </script>
+        </div>
+    </section>
+
     <section>
         <h3>Про сайт</h3>
         <ul class="short-list">
@@ -69,8 +96,24 @@
 </main>
 
 <footer>
-    <p>© 2026 Студент КПІ, Артем. Лабораторна робота.</p>
+    <p>© 2026 Студент КПІ, Артем.</p>
 </footer>
+
+<script>
+    document.getElementById('btn-greeting').onclick = function() {
+        let isReady = confirm("Бажаєте підписатися на нашу щотижневу розсилку?");
+        if (isReady) {
+            let name = prompt("Як до вас звертатися?", "Геймер");
+            if (name !== null) {
+                alert("Раді вітати, " + name + "! Ви успішно підписані на новини.");
+            }
+        } else {
+            alert("Можливо, наступного разу!");
+        }
+    };
+</script>
+
+<script src="script.js"></script>
 
 </body>
 </html>

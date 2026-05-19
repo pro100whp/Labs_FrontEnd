@@ -36,16 +36,12 @@
         <h3>Гра місяця</h3>
         
         <div class="game-of-the-month-card">
-            
             <div class="hot-badge">ХІТ ПРОДАЖІВ</div>
-            
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMk5lXjt8WO3iCoNXzDDYEOv4c_v1DnR0isw&s" alt="Game cover" width="200" class="float-image">
-            
             <p>
                 Цього місяця абсолютним лідером серед гравців став новий екшен у відкритому світі. 
                 Розробники додали неймовірну графіку, глибокий сюжет та круту бойову систему. 
             </p>
-            
             <p style="margin-top: 15px;">
                 Дізнатись більше: <a href="https://store.steampowered.com" target="_blank" class="content-link">Офіційна сторінка у Steam</a>
             </p>
@@ -54,8 +50,7 @@
     </section>
 
     <section id="interactive-section">
-        <h3>Панель керування (Лабораторна №6)</h3>
-        
+        <h3>Панель керування</h3>
         <div style="margin-bottom: 15px; display: flex; gap: 10px; flex-wrap: wrap;">
             <button id="btn-greeting" style="padding: 10px; background: #00ffcc; border: none; cursor: pointer; border-radius: 5px; font-weight: bold;">Підписка на новини</button>
             <button id="btn-promo" style="padding: 10px; background: #ff0055; color: white; border: none; cursor: pointer; border-radius: 5px; font-weight: bold;">Опитування гравців</button>
@@ -79,17 +74,15 @@
         </div>
     </section>
 
-    <!-- Лаба 7 -->
-    <section id="lab7-events-section" style="border: 2px solid #00ffcc; border-radius: 10px; padding: 20px; background-color: #1e1e1e;">
-        <h3 style="color: #00ffcc;">🎮 Інтерактивний розділ гравця (Лаба 7)</h3>
+    <section id="lab7-events-section" style="border: 2px solid #00ffcc; border-radius: 10px; padding: 20px; background-color: #1e1e1e; margin-bottom: 30px;">
+        <h3 style="color: #00ffcc;">🎮 Інтерактивний розділ гравця</h3>
 
         <div style="margin-bottom: 25px; padding: 15px; background: #262626; border-radius: 8px;">
             <h4>Анонс нової гри</h4>
             <img id="game-poster" src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=250" alt="Poster" 
                  style="border-radius: 8px; cursor: pointer; transition: 0.3s; display: block; margin-bottom: 10px;" 
                  onmouseenter="posterHoverAttribute(this)">
-            <p id="poster-status" style="color: #b3b3b3; font-size: 0.9rem;">Статус: ...</p>
-            
+            <p id="poster-status" style="color: #b3b3b3; font-size: 0.9rem;">Наведіть курсор для взаємодії...</p>
             <button id="secret-promo-btn" style="margin-top: 10px; padding: 10px 15px; background: #b088f5; color: #fff; border: none; border-radius: 4px; cursor: pointer; font-weight: bold;">
                 Отримати одноразовий VIP-ключ
             </button>
@@ -120,6 +113,33 @@
             <button data-behavior="counter" style="padding: 8px 15px; cursor: pointer; border: 1px solid #ff0055; background: transparent; color: #ff0055; border-radius: 4px; margin-left: 10px;">
                 👎 Не подобається: <span>0</span>
             </button>
+        </div>
+    </section>
+
+    <section id="lab8-events-section" style="border: 2px solid #ff9900; border-radius: 10px; padding: 20px; background-color: #1e1e1e;">
+        <h3 style="color: #ff9900;">⚔️ Інвентар та Торгівля</h3>
+
+        <div style="display: flex; justify-content: space-between; gap: 20px; align-items: flex-start; padding: 15px; background: #262626; border-radius: 8px;">
+            
+            <div id="inventory-zone" style="flex-grow: 1;">
+                <h4 style="margin-bottom: 10px;">Ваші предмети:</h4>
+                <p style="color: #b3b3b3; font-size: 0.9rem; margin-bottom: 15px;">Наведіть для огляду, перетягніть у кошик для продажу.</p>
+                
+                <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+                    <div class="drag-item" style="padding: 15px 25px; background: #333; border: 2px solid #555; border-radius: 5px; font-weight: bold; cursor: grab; user-select: none;">🗡️ Меч</div>
+                    <div class="drag-item" style="padding: 15px 25px; background: #333; border: 2px solid #555; border-radius: 5px; font-weight: bold; cursor: grab; user-select: none;">🛡️ Щит</div>
+                    <div class="drag-item" style="padding: 15px 25px; background: #333; border: 2px solid #555; border-radius: 5px; font-weight: bold; cursor: grab; user-select: none;">🧪 Зілля</div>
+                </div>
+
+                <div id="sys-log" style="margin-top: 20px; padding: 10px; background: #111; color: #ff9900; font-family: monospace; font-size: 0.85rem; border-left: 3px solid #ff9900;">
+                    Системний журнал: очікування дій...
+                </div>
+            </div>
+
+            <div id="sell-zone" style="width: 150px; height: 150px; border: 3px dashed #ff9900; border-radius: 10px; display: flex; align-items: center; justify-content: center; text-align: center; color: #ff9900; font-weight: bold; font-size: 1.1rem; flex-shrink: 0; background: #1a1a1a;">
+                Кошик<br>Торговця
+            </div>
+
         </div>
     </section>
 
